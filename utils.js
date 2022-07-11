@@ -23,11 +23,39 @@ const sortBySmaller = (array) =>{
 
 const toggleCard = () => {
     let cards = document.getElementsByClassName('cards');
-    console.log(cards);
+    let cardArray = [];
     Array.from(cards).forEach(card=>
         card.addEventListener('click', ()=>{
             card.classList.toggle('active-cards');
-            console.log(card.id);
+
+     
+                    for(let i = 0; i < cardArray.length; i++){
+                        if(cardArray[i].id !== card.id){
+                            console.log("test2");
+                            console.log(card.id);
+                            console.log(card.children[0].children[1].children[0].innerHTML);
+                            cardArray.push({
+                                id: card.id,
+                                ville: card.children[0].children[0].innerHTML,
+                                essence: {
+                                    adresse: card.children[0].children[1].children[0].innerHTML,
+                                    nom: card.children[0].children[1].children[1].innerHTML,
+                                    prix: card.children[0].children[1].children[2].innerHTML,
+                                    maj: card.children[0].children[1].children[3].innerHTML
+                                }
+                            })
+                            break
+                        }
+                        else{
+                            console.log(cardArray[i].id);
+                            cardArray.splice(i, 1);
+                            break
+
+                        }    
+                    }
+                
+            
+            console.log(cardArray);
         })
     )
 }
