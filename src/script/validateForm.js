@@ -65,7 +65,8 @@ const validateForm = () => {
             }
         }
         divResults.innerHTML =        
-            `<div class="row">
+            `
+            <div class="row">
             ${array.map(item=>
                 `
             <div class="col-sm-4 col-md-2 col-10">
