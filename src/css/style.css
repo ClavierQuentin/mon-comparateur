@@ -4,11 +4,6 @@ body{
     box-sizing: border-box !important;
     font-family: Arial, Helvetica, sans-serif;
 }
-/*
-nav{
-    width: 70%;
-    margin: auto;
-}*/
 
 section{
     min-width: 50%;
@@ -25,9 +20,7 @@ section{
  border-radius: 10px;
 }
 #form{
-    display: flex;
     gap: 5%;
-    flex-wrap: wrap;
 }
 .selects{
     display: flex;
