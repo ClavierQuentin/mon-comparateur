@@ -35,7 +35,10 @@ const validateForm = () => {
      .then((results)=>{
         let data = results.records;
         let array = [];
+
         for(let i = 0; i < data.length; i++){
+            let ville = (data[i].fields.ville).toLowerCase();
+            ville = ville.charAt(0).toUpperCase() + ville.slice(1); 
             let isTrue = false;
             for(let j = 0; j < array.length; j++){
                 if(array[j].adresse == data[i].fields.adresse){
@@ -50,8 +53,6 @@ const validateForm = () => {
                 }
             }
             if(!isTrue){
-                let ville = data[i].fields.ville;
-                ville = ville.charAt(0).toUpperCase() + ville.slice(1); 
 
                 array.push({
                     id: data[i].fields.id,
@@ -69,7 +70,7 @@ const validateForm = () => {
         }
         divResults.innerHTML =        
             `
-            <div class="row">
+            <div class="row gx-0">
             ${array.map(item=>
                 `
             <div class="col-sm-4 col-md-2 col-10">
@@ -79,9 +80,9 @@ const validateForm = () => {
                         <ul>
                             ${item.essence.map(essence=>
                                 `
-                            <li>Adresse : ${item.adresse}</li>
+                            <li> ${item.adresse}<br><a target="_blankc" href="https://www.google.com/maps/place/${item.adresse}+${item.ville}">Voir sur Google Maps</a></li>
                             <li>Type : ${essence.nom}</li>
-                            <li>Prix : ${essence.prix}</li>
+                            <li>Prix : ${essence.prix} €</li>
                             <li>Maj : ${essence.maj}</li>
                                 `
                                 )}

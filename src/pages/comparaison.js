@@ -13,7 +13,7 @@ const comparaisonPage = {
                 </h3>
             </div>
             <section>
-            <div class="row">
+            <div class="row gx-0">
             ${items.map(item=>
                 `
             <div class="col-sm-4 col-md-2 col-10">
