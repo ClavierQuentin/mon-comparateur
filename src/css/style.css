@@ -22,6 +22,9 @@ section{
 #form{
     gap: 5%;
 }
+#divVille{
+    visibility: hidden;
+}
 .selects{
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +56,6 @@ h5{
 li{
     list-style: none;
 }
-
 .active-cards{
     border: 3px solid rgb(238, 40, 40);
     box-shadow: rgb(230, 70, 70) 0px 0px 10px;
@@ -63,7 +65,4 @@ li{
     position: absolute;
     right: 0;
     margin: 2px;
-}
-svg{
-    color: #0dcaf0 !important;
 }

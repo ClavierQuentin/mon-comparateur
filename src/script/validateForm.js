@@ -55,6 +55,8 @@ const validateForm = () => {
             if(!isTrue){
 
                 array.push({
+                    geom1:data[i].fields.geom[0],
+                    geom2:data[i].fields.geom[1],
                     id: data[i].fields.id,
                     adresse: data[i].fields.adresse,
                     ville: ville,
@@ -95,6 +97,7 @@ const validateForm = () => {
              </div>
             `
        toggleCard();
+       
 
         
         /*let row = ""

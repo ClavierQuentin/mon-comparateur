@@ -25,7 +25,7 @@ const formPage =  {
                 <label for="liste-departements">Sélectionner un département</label>
                 <select name="departements" id="départements"></select>
             </div>
-            <div class="m-2">
+            <div class="m-2" id="divVille">
                 <label for="ville">Choisir une ville</label>
                 <select name="ville" id="ville"></select>
             </div>

@@ -9,7 +9,7 @@ const comparaisonPage = {
         `
             <div class="m-2">
                 <h3>
-                    Vos séléctions :
+                    Vos sélections :
                 </h3>
             </div>
             <section>
