@@ -50,10 +50,13 @@ const validateForm = () => {
                 }
             }
             if(!isTrue){
+                let ville = data[i].fields.ville;
+                ville = ville.charAt(0).toUpperCase() + ville.slice(1); 
+
                 array.push({
                     id: data[i].fields.id,
                     adresse: data[i].fields.adresse,
-                    ville: data[i].fields.ville,
+                    ville: ville,
                     essence:[
                         {
                             maj: data[i].fields.prix_maj.split("-")[2].split("T")[0] + "/" + data[i].fields.prix_maj.split("-")[1] + "/" + data[i].fields.prix_maj.split("-")[0],

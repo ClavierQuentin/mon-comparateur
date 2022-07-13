@@ -4,11 +4,16 @@ const homePage = {
         const main = document.querySelector('main');
         main.innerHTML = 
         `
-            <section>
+            <div class="intro">
+                <h1>Bienvenue</h1>
                 <div>
-                    <h1>Bienvenue sur mon API de comparaison de tarifs de stations services</h1>
+                    <h2>Comparez facilement vos stations services préférées en trois étapes :</h2>
+                    <ul>
+                        <li>1) Choisissez vos critères entre le département, la ville et le type d'essence</li>
+                        <li>2) Cliquez sur "Rechercher"</li>
+                        <li>3) Sélectionnez les stations à comparer</li>
                 </div>
-            </section>
+            </div>
         `
     }
 }

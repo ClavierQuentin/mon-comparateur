@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bf57503e64.js" crossorigin="anonymous"></script>
+
     <script type="module" src="main.js"></script>
     <link rel="stylesheet" href="src/css/style.css">    
 
     <title>Comparateur de station service</title>
 </head>
-<body onkeyup="recupKeyEvent()" class="container-fluid bg-light">
-    <header class="m-1">
+<body onkeyup="recupKeyEvent()" class="container-fluid gx-0">
+    <header class="m-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active " aria-current="page" href="#">Home</a>
+                    <a class="nav-link active " aria-current="page" href="#">Accueil</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link "  href="#/form">Recherche</a>
@@ -35,6 +37,23 @@
     <main class="">
 
     </main>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 p-1 border-top border-info">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="text-muted">© 2022 Quentin Clavier</span>
+      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a href="https://www.instagram.com/cl_quentin/?hl=fr" target="_blank" class="reseau"><i style="color: #5754cd;" id="instagram" class="fab fa-instagram fa-2x"></i></a>
+        </li>
+        <li class="ms-3">
+          <a href="https://www.linkedin.com/in/quentin-clavier/" target="_blank" class="reseau"><i style="color: #0274b3;" class="fab fa-linkedin fa-2x"></i></a>
+        </li>
+        <li class="ms-3">
+          <a href="https://github.com/ClavierQuentin" class="reseau" target="_blank"><i style="color: black;" class="fab fa-github fa-2x" title="GITHUB"></i></a>
+        </li>
+
+      </ul>
+    </footer>
 </body>
 <script src="src/script/liste-departements.json"></script>
 

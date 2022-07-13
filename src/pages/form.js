@@ -22,7 +22,7 @@ const formPage =  {
         <div id="form">
         <div class="selects">
             <div class="m-2">
-                <label for="liste-departements"><strong>Sélectionner un département</strong></label>
+                <label for="liste-departements">Sélectionner un département</label>
                 <select name="departements" id="départements"></select>
             </div>
             <div class="m-2">
@@ -30,7 +30,7 @@ const formPage =  {
                 <select name="ville" id="ville"></select>
             </div>
             </div>
-        <div>
+        <div class="m-2">
             <label for="essence">Selectionnez un type d'essence : </label><br>
             <input type="radio" name="essence" id="SP98" value="SP98" class="form-check-input essence"><label class="form-check-label" for="SP98">SP98</label> <br>
             <input type="radio" name="essence" id="SP95" value="SP95" class="form-check-input essence"><label for="SP95">SP95</label> <br>
@@ -39,7 +39,9 @@ const formPage =  {
             <input type="radio" name="essence" id="E10" value="E10" class="form-check-input essence"><label for="E10">E10</label> <br>
             <input type="radio" name="essence" id="E85" value="E85" class="form-check-input essence"><label for="E85">E85</label> <br>
         </div>
-        <button id="btnValidate" class="btn btn-success">Valider</button>
+        <div class="m-2">
+            <button id="btnValidate" class="btn btn-success">Valider</button>
+        </div>
     </div>
     <section>
         <div id="results">

@@ -1,3 +1,6 @@
+import comparaisonPage from "./src/pages/comparaison.js";
+
+
 const parseRequestUrl = () => {
     const url = document.location.hash.toLowerCase();
     const request = url.split("/");
@@ -59,4 +62,24 @@ const toggleCard = () => {
         })
     )
 }
-export { parseRequestUrl, sortBySmaller , toggleCard};
+
+const deleteCard = () =>{
+    let btn = document.getElementsByClassName('button');
+    let cardArray = [];
+    Array.from(btn).forEach(btn=>
+        btn.addEventListener('click', () => {
+            localStorage.getItem('liste') ? cardArray = JSON.parse(localStorage.getItem('liste')) : cardArray = [];
+            const exist = cardArray.find(x => x.id == btn.id);
+            if(exist){
+                for(let i = 0; i < cardArray.length; i++){
+                    if(cardArray[i].id == btn.id){
+                        cardArray.splice(i,1);
+                    }
+                }
+            }
+            localStorage.setItem('liste', JSON.stringify(cardArray));
+            comparaisonPage.generate();
+        })
+    )
+}
+export { parseRequestUrl, sortBySmaller , toggleCard, deleteCard};

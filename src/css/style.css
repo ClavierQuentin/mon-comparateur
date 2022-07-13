@@ -1,14 +1,40 @@
+
 body{
-    margin: 0;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    font-family: Arial, Helvetica, sans-serif;
 }
+/*
+nav{
+    width: 70%;
+    margin: auto;
+}*/
 
 section{
     min-width: 50%;
-    min-height: 100vh;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% auto;
+    padding: 2%;
+    width: 70%;
+ min-height: 300px ;
+ border: 2px solid rgb(185, 175, 245);
+ border-radius: 10px;
+}
+#form{
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
 }
 .selects{
     display: flex;
     flex-wrap: wrap;
+}
+label{
+    font-weight: bold;
 }
 .cards{
     border: 3px solid rgb(185, 175, 245);
@@ -17,15 +43,18 @@ section{
     height: 230px !important;
     padding: 5px;
     box-shadow: slategray 0px 0px 10px;
-    display:flex; 
-    flex-direction:column;
     margin: 10px;
     overflow-y: auto;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    position: relative;
 }
 
-h2, h5{
+h2{
+    text-align: center;
+}
+h5{
+    text-align: center;
+    width: 75%;
     text-align: center;
 }
 li{
@@ -35,4 +64,13 @@ li{
 .active-cards{
     border: 3px solid rgb(238, 40, 40);
     box-shadow: rgb(230, 70, 70) 0px 0px 10px;
+}
+
+.button{
+    position: absolute;
+    right: 0;
+    margin: 2px;
+}
+svg{
+    color: #0dcaf0 !important;
 }
