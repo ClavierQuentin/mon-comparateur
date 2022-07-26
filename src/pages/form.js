@@ -42,6 +42,11 @@ const formPage =  {
         <div class="m-2">
             <button id="btnValidate" class="btn btn-success">Valider</button>
         </div>
+        <form id="demo-form" action="?" method="POST">
+      <button class="g-recaptcha" data-sitekey="your_site_key" data-callback="onSubmit">Submit</button>
+      <br/>
+    </form>
+
     </div>
     <section>
         <div id="results">

@@ -13,7 +13,6 @@ const homePage = {
                         <li>2) Cliquez sur "Rechercher"</li>
                         <li>3) Sélectionnez les stations à comparer</li>
                 </div>
-                <div class="g-recaptcha" data-sitekey="6LepuxohAAAAAChJ_a-bx9KO4nqIfEw8iCt5Jk3y"></div>
             </div>
         `
     }
