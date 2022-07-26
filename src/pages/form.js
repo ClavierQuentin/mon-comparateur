@@ -43,7 +43,7 @@ const formPage =  {
             <button id="btnValidate" class="btn btn-success">Valider</button>
         </div>
         <form id="demo-form" action="?" method="POST">
-      <button class="g-recaptcha" data-sitekey="your_site_key" data-callback="onSubmit">Submit</button>
+      <button class="g-recaptcha" data-sitekey="6LepuxohAAAAAChJ_a-bx9KO4nqIfEw8iCt5Jk3y" data-callback="onSubmit">Submit</button>
       <br/>
     </form>
 
